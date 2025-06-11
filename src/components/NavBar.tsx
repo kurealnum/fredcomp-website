@@ -8,7 +8,7 @@ import {
 
 export default function NavBar() {
   return (
-    <NavigationMenu className="bg-secondary w-screen max-w-screen flex-row justify-between">
+    <NavigationMenu className="bg-secondary w-screen max-w-screen flex-row justify-between text-white text-shadow-lg/15">
       <NavigationMenuItem>
         <NavigationMenuLink href="/">
           <Image src={"/fredcomp_logo.png"} alt="" width={50} height={50} />
