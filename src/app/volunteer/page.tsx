@@ -11,13 +11,13 @@ export default function Page() {
       <RowWrap maxWidth={1200}>
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
           <h2 className="text-xl">Volunteer Inquiry</h2>
-          <p>
+          <div>
             Please complete{" "}
             <CustomLink href="https://forms.gle/dkaQjEtzNpb7YLk18">
               this form
             </CustomLink>{" "}
             to inquire about being a general volunteer!
-          </p>
+          </div>
           <p>
             We respond to all inquiries and the only criteria for volunteering
             is a positive attitude and a desire to participate in a constructive
@@ -54,13 +54,13 @@ export default function Page() {
       <RowWrap maxWidth={1200} className="mt-8">
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
           <h2 className="text-center text-xl">Volunteer Coach Inquiry</h2>
-          <p>
+          <div>
             Please complete{" "}
             <CustomLink href="https://forms.gle/PKuLApVavxtu1Uo88">
               this form
             </CustomLink>{" "}
             to inquire about becoming a volunteer coach!
-          </p>
+          </div>
           <p>
             Fredericksburg Composite relies upon a 100% volunteer corps of
             coaches. Like most youth sport leagues, we draw our coaches from the
@@ -68,7 +68,7 @@ export default function Page() {
             expert-level cyclists or racers, rather they draw from a wide range
             of professional & personal expertise.
           </p>
-          <p>
+          <div>
             All Fredericksburg Composite coaches are trained/vetted with
             background checks, abuse awareness, and upper level coaches are
             trained with First Aid and CPR. Basic training consists of a
@@ -76,7 +76,7 @@ export default function Page() {
             <CustomLink href="https://nationalmtb.org/coach-education-requirements">
               provided by NICA.
             </CustomLink>
-          </p>
+          </div>
           <p>
             We require a coach to student athlete ratio of 2:8. The more coaches
             we have, the more student athletes we can bring to the team! 
