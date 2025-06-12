@@ -113,21 +113,21 @@ export default function Home() {
               <CarouselItem>
                 <Image
                   src={Carousel1}
-                  alt="???"
+                  alt="Crosby (left) and Milo (right) lifting Lucas"
                   className="mx-auto w-[90vw] max-w-[300px]"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   src={Carousel2}
-                  alt="???"
+                  alt="Coach Pete with his daughters, Emma (left) and Lily (right)"
                   className="mx-auto w-[90vw] max-w-[300px]"
                 />
               </CarouselItem>
               <CarouselItem>
                 <Image
                   src={Carousel3}
-                  alt="???"
+                  alt="(From left to right) Emma C., Brianna, Lily, and Emma S."
                   className="mx-auto w-[90vw] max-w-[300px]"
                 />
               </CarouselItem>
