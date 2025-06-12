@@ -21,7 +21,9 @@ export default function CustomAccordionItem({
 }) {
   return (
     <AccordionItem value={id} className={className + " font-light"}>
-      <AccordionTrigger className={triggerClassName + " text-md font-normal"}>
+      <AccordionTrigger
+        className={triggerClassName + " text-md cursor-pointer font-normal"}
+      >
         {trigger}
       </AccordionTrigger>
       <AccordionContent className={contentClassName}>
