@@ -5,27 +5,37 @@ import {
   NavigationMenuList,
   NavigationMenuLink,
 } from "./ui/navigation-menu";
+import HoverLink from "./HoverLink";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <NavigationMenu className="bg-secondary w-screen max-w-screen flex-row justify-between text-white text-shadow-lg/15">
-      <NavigationMenuItem>
-        <NavigationMenuLink href="/">
+    <NavigationMenu className="bg-secondary w-screen max-w-screen flex-row justify-center text-white text-shadow-lg/15 sm:justify-between">
+      <div>
+        <NavigationMenuLink className="pr-0 max-sm:w-0 max-sm:p-0" href="/">
           <Image src={"/fredcomp_logo.png"} alt="" width={50} height={50} />
         </NavigationMenuLink>
-      </NavigationMenuItem>
+      </div>
       <NavigationMenuList className="flex-row justify-end gap-0">
         <NavigationMenuItem>
-          <NavigationMenuLink>Join The Team</NavigationMenuLink>
+          <Link href={"/join"}>
+            <HoverLink text="Join The Team" />
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink>Volunteer/Coach</NavigationMenuLink>
+          <Link href={"/volunteer"}>
+            <HoverLink text="Volunteer/Coach" />
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink>Donate</NavigationMenuLink>
+          <Link href={"/donate"}>
+            <HoverLink text="Donate" />
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink>FAQ</NavigationMenuLink>
+          <Link href={"/faq"}>
+            <HoverLink text="FAQ" />
+          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
