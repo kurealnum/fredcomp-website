@@ -8,11 +8,13 @@
 export default function RowWrap({
   children,
   maxWidth,
+  className,
   id,
 }: {
   children: React.ReactNode;
   maxWidth: number;
   id?: string;
+  className?: string;
 }) {
   return (
     <div
@@ -20,7 +22,9 @@ export default function RowWrap({
       className={
         "max-w-[" +
         maxWidth +
-        "] mx-auto flex w-[94vw] flex-row flex-wrap items-center justify-center gap-8"
+        "px] mx-auto flex w-[94vw] flex-row flex-wrap items-center justify-center gap-8" +
+        " " +
+        className
       }
     >
       {children}

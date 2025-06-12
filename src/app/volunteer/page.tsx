@@ -1,3 +1,4 @@
+import RowWrap from "@/components/RowWrap";
 import RonAndRon from "@img/ron_and_ron.jpg";
 import TeamInField from "@img/team_in_field.jpg";
 import Image from "next/image";
@@ -6,7 +7,7 @@ export default function Page() {
   return (
     <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-center font-light">
       <h1 className="my-8 text-center text-3xl">Volunteer</h1>
-      <div className="mb-16 flex w-auto flex-row flex-wrap">
+      <RowWrap maxWidth={1200}>
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
           <h2 className="text-xl">Volunteer Inquiry</h2>
           <p>
@@ -51,8 +52,8 @@ export default function Page() {
           src={RonAndRon}
           className="mx-auto w-[94vw] max-w-[500px]"
         />
-      </div>
-      <div className="flex flex-row flex-wrap items-center">
+      </RowWrap>
+      <RowWrap maxWidth={1200} className="mt-8">
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
           <h2 className="text-center text-xl">Volunteer Coach Inquiry</h2>
           <p>
@@ -89,7 +90,7 @@ export default function Page() {
           src={TeamInField}
           className="mx-auto max-h-[333px] w-[94vw] max-w-[500px]"
         />
-      </div>
+      </RowWrap>
     </div>
   );
 }

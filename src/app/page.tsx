@@ -15,7 +15,7 @@ import LilyOnBike from "@img/lilyonbike.jpg";
 import Carousel1 from "@img/homepage_carousel_1.jpg";
 import Carousel2 from "@img/homepage_carousel_2.jpg";
 import Carousel3 from "@img/homepage_carousel_3.jpg";
-import RowWrap from "@/components/ImageAndTextWrapper";
+import RowWrap from "@/components/RowWrap";
 
 export default function Home() {
   return (

@@ -1,12 +1,13 @@
 import James from "@img/james_through_creek.png";
 import CoachSteve from "@img/coachsteve_and_bike.png";
 import Image from "next/image";
+import RowWrap from "@/components/RowWrap";
 
 export default function Page() {
   return (
     <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-center font-light">
       <h1 className="my-8 text-center text-3xl">Donate</h1>
-      <div className="flex flex-row flex-wrap gap-4">
+      <RowWrap maxWidth={1200}>
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
           <h2 className="text-center text-xl">
             What would my donation support?
@@ -31,8 +32,8 @@ export default function Page() {
           alt="James going through a creek at Blue Ridge School"
           src={James}
         />
-      </div>
-      <div className="mt-8 flex flex-row flex-wrap gap-4">
+      </RowWrap>
+      <RowWrap maxWidth={1200} className="mt-12">
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
           <h2 className="text-center text-xl">Donate gear!</h2>
           <p>
@@ -56,7 +57,7 @@ export default function Page() {
           alt="Coach steve talking about bike maintenance"
           src={CoachSteve}
         />
-      </div>
+      </RowWrap>
       <h1 className="my-8 mt-12 text-center text-3xl">
         Sponsor/partner with us
       </h1>
