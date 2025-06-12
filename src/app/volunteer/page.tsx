@@ -1,3 +1,4 @@
+import CustomLink from "@/components/CustomLink";
 import RowWrap from "@/components/RowWrap";
 import RonAndRon from "@img/ron_and_ron.jpg";
 import TeamInField from "@img/team_in_field.jpg";
@@ -12,12 +13,9 @@ export default function Page() {
           <h2 className="text-xl">Volunteer Inquiry</h2>
           <p>
             Please complete{" "}
-            <a
-              href="https://forms.gle/dkaQjEtzNpb7YLk18"
-              className="text-secondary"
-            >
+            <CustomLink href="https://forms.gle/dkaQjEtzNpb7YLk18">
               this form
-            </a>{" "}
+            </CustomLink>{" "}
             to inquire about being a general volunteer!
           </p>
           <p>
@@ -58,12 +56,9 @@ export default function Page() {
           <h2 className="text-center text-xl">Volunteer Coach Inquiry</h2>
           <p>
             Please complete{" "}
-            <a
-              href="https://forms.gle/PKuLApVavxtu1Uo88"
-              className="text-secondary"
-            >
+            <CustomLink href="https://forms.gle/PKuLApVavxtu1Uo88">
               this form
-            </a>{" "}
+            </CustomLink>{" "}
             to inquire about becoming a volunteer coach!
           </p>
           <p>
@@ -77,8 +72,10 @@ export default function Page() {
             All Fredericksburg Composite coaches are trained/vetted with
             background checks, abuse awareness, and upper level coaches are
             trained with First Aid and CPR. Basic training consists of a
-            background check and roughly 3 hours of online training courses
-            provided by NICA.
+            background check and roughly 3 hours of online training courses{" "}
+            <CustomLink href="https://nationalmtb.org/coach-education-requirements">
+              provided by NICA.
+            </CustomLink>
           </p>
           <p>
             We require a coach to student athlete ratio of 2:8. The more coaches

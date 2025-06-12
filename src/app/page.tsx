@@ -16,6 +16,7 @@ import Carousel1 from "@img/homepage_carousel_1.jpg";
 import Carousel2 from "@img/homepage_carousel_2.jpg";
 import Carousel3 from "@img/homepage_carousel_3.jpg";
 import RowWrap from "@/components/RowWrap";
+import CustomLink from "@/components/CustomLink";
 
 export default function Home() {
   return (
@@ -108,8 +109,14 @@ export default function Home() {
             </h1>
             <ul className="mx-auto mb-8 w-[90vw] max-w-[600px] list-inside list-disc text-center font-light">
               <li>
-                A working mountain bike with gears. But what if I don&apos;t
-                have a bike?
+                <li className="inline-block">
+                  <div className="flex flex-row flex-wrap gap-1">
+                    <p>A working mountain bike with gears. </p>
+                    <CustomLink href="/faq#loaner-bikes">
+                      But what if I don&apos;t have a bike?
+                    </CustomLink>
+                  </div>
+                </li>
               </li>
               <li>
                 Means of carrying water. Water bottles, hydration packs, or a

@@ -3,6 +3,7 @@ import TeamPhoto from "@img/lake_teamphoto.jpg";
 import EastonAndRonald from "@img/easton_and_ronald.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import CustomLink from "@/components/CustomLink";
 
 export default function Page() {
   return (
@@ -26,7 +27,12 @@ export default function Page() {
               for riders who are:
             </p>
             <ul className="mb-2 list-inside list-disc">
-              <li>9 years or older (but we do make exceptions!)</li>
+              <li>
+                9 years or older{" "}
+                <CustomLink href="/faq#age-exceptions">
+                  (but we do make exceptions!)
+                </CustomLink>
+              </li>
               <li>Excited about mountain biking</li>
             </ul>
             <p>
@@ -43,10 +49,13 @@ export default function Page() {
           />
           <h2 className="my-4 text-center text-xl">Student Athlete Inquiry</h2>
           <div className="mx-auto w-[95%] max-w-[600px]">
-            <p className="mb-2">
-              Please use this form to inquire about your student athlete joining
-              the team!
-            </p>
+            <div className="mb-2">
+              Please use{" "}
+              <CustomLink href="https://forms.gle/U3jdPCcdpH2qMc5c6">
+                this form
+              </CustomLink>{" "}
+              to inquire about your student athlete joining the team!
+            </div>
             <p>
               This form is only an inquiry, not means of registration. Note that
               student athletes are not required to have any previous experience.
@@ -95,15 +104,32 @@ export default function Page() {
       </div>
       <div className="my-4 flex flex-row flex-wrap justify-center gap-4">
         <Button variant={"default"}>
-          <Link href={""} className="text-white">
+          <Link
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSdvjKtTGr0g9zjkXMQ9yRNQf6mfrj070iT5wR612iR8KeEPNw/viewform?usp=sf_link"
+            }
+            className="text-white"
+          >
             Registration form
           </Link>
         </Button>
         <Button variant={"secondary"}>
-          <Link href={""}>Pay by credit card</Link>
+          <Link
+            href={
+              "https://www.google.com/url?q=https%3A%2F%2Fsquare.link%2Fu%2F4V2nVHru&sa=D&sntz=1&usg=AOvVaw3uJ72s6D6L1JJAY5BzTpNH"
+            }
+          >
+            Pay by credit card
+          </Link>
         </Button>
         <Button variant={"secondary"}>
-          <Link href={""}>Pay with PayPal</Link>
+          <Link
+            href={
+              "http://www.google.com/url?q=http%3A%2F%2Fpaypal.me%2FFredCompMTB&sa=D&sntz=1&usg=AOvVaw3sOU_dMG5DCjaXSYAlP7nw"
+            }
+          >
+            Pay with PayPal
+          </Link>
         </Button>
       </div>
       <div className="flex flex-row flex-wrap items-center justify-center gap-8">

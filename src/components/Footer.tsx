@@ -3,6 +3,7 @@ import Monolith from "@img/monolith.png";
 import CMV from "@img/custommetals.png";
 import Image from "next/image";
 import Link from "next/link";
+import CustomLink from "./CustomLink";
 
 export default function Footer() {
   return (
@@ -13,6 +14,11 @@ export default function Footer() {
             Helpful Links
           </h1>
           <ul className="flex flex-col *:hover:underline">
+            <li>
+              <a href="https://github.com/kurealnum/fredcomp-website">
+                We&apos;re open source!
+              </a>
+            </li>
             <li>
               <a href="https://github.com/kurealnum/fredcomp-website/issues">
                 Make a feature request
@@ -58,9 +64,9 @@ export default function Footer() {
               />
             </li>
             <li className="mt-2">
-              <Link href={"/donate"} className="text-secondary hover:underline">
+              <CustomLink href={"/donate"}>
                 Interested in being a sponsorer?
-              </Link>
+              </CustomLink>
             </li>
           </ul>
         </div>
@@ -89,15 +95,10 @@ export default function Footer() {
       </div>
       <Separator className="bg-accent" />
       <div className="flex flex-row flex-wrap justify-center gap-4 py-4">
-        <p>
-          Website designed & developed by{" "}
-          <a
-            className="text-secondary hover:underline"
-            href="https://oscargaske.me"
-          >
-            Oscar Gaske
-          </a>
-        </p>
+        <div className="flex flex-row gap-1">
+          Website designed & developed by
+          <CustomLink href="/faq#loaner-bikes">Oscar Gaske</CustomLink>
+        </div>
         <p>Majority of photos taken by Emily Lumpkins</p>
       </div>
     </div>
