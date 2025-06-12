@@ -23,7 +23,7 @@ export default function Page() {
           <p>
             We respond to all inquiries and the only criteria for volunteering
             is a positive attitude and a desire to participate in a constructive
-            youth development program.
+            youth development program (Fredericksburg Composite!).
           </p>
           <ul className="list-inside list-disc">
             <li>
@@ -32,7 +32,7 @@ export default function Page() {
               after practice. 
             </li>
             <li>
-              Grants researcher/writer: as we try to sponsor more student
+              Grants researcher/writer: as we attempt to sponsor more student
               athletes who otherwise would not financially be able to join the
               team or participate in races, we are always in need of volunteers
               to help find and apply for grants.
@@ -43,7 +43,7 @@ export default function Page() {
             </li>
             <li>
               Photographer: volunteer to take photos at practices and/or races
-              and events.
+              and other events.
             </li>
           </ul>
         </div>
@@ -71,13 +71,13 @@ export default function Page() {
             coaches. Like most youth sport leagues, we draw our coaches from the
             parent pool and the local community. Most of our coaches are not
             expert-level cyclists or racers, rather they draw from a wide range
-            of professional & personal expertise to make the team whole.
+            of professional & personal expertise.
           </p>
           <p>
             All Fredericksburg Composite coaches are trained/vetted with
             background checks, abuse awareness, and upper level coaches are
             trained with First Aid and CPR. Basic training consists of a
-            background check and about 3 hours of online training courses
+            background check and roughly 3 hours of online training courses
             provided by NICA.
           </p>
           <p>

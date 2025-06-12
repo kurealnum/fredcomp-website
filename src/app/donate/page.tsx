@@ -13,10 +13,10 @@ export default function Page() {
             What would my donation support?
           </h2>
           <p>
-            A donation of any dollar mount will be used to purchase & maintain
+            A donation of any dollar amount will be used to purchase & maintain
             team equipment (tents, cones, consumables, and more), to help cover
             the cost of training volunteer coaches, and to cover the cost of
-            team insurance!
+            team insurance.
           </p>
           <p>
             A $50 donation covers the team fees for one student athlete who
@@ -24,7 +24,8 @@ export default function Page() {
           </p>
           <p>
             A $275 donation covers the team fees and racing fees for a student
-            athlete who would like to race in the fall or spring season!
+            athlete who would otherwise not have the resources to race in the
+            fall or spring season!
           </p>
         </div>
         <Image
@@ -45,11 +46,11 @@ export default function Page() {
           <p>
             New hydration packs, water bottle cages, and water bottles are an
             essential need and a quick go-to if you want to donate gear. Send us
-            an email to inquire about donating.{" "}
+            an email to inquire about donating.
           </p>
           <p>
             All donations are tax deductible and will be shared with student
-            athletes who need them!
+            athletes who <i>need</i> them!
           </p>
         </div>
         <Image

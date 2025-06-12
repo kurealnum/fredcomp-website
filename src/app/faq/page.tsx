@@ -32,7 +32,8 @@ export default function Page() {
           <AccordionContent>
             <p className="mb-2">
               Team fees are collected per season (January-June and
-              July-December) as of June 2025: $50 for each student athlete.
+              July-November). As of June 2025, team fees are $50 for each
+              student athlete.
             </p>
             <p className="mb-2">
               Additional fees for student athletes who will be racing:
@@ -84,11 +85,20 @@ export default function Page() {
               local shops who have been extremely helpful with bike checks and
               maintenance classes. All our practices and events start with a
               bike check (A,B,C,D,E,F): air, brakes, chain, derailleur,
-              everything else, food/fuel for you!). Do your tires hold air and
-              have plenty of tread? Do your brakes work? Is your chain clean and
-              lubed? Is your derailleur straight and functional? Don&apos;t
-              worry if you don&apos;t know what these things are or how to check
-              them! Our coaches and your teammates are here to help!
+              everything else, food/fuel for you!):
+            </p>
+            <ul className="mb-2 list-inside list-disc">
+              <li>Do your tires hold air and have plenty of tread?</li>
+              <li>Do your brakes work?</li>
+              <li>Is your chain clean and lubed?</li>
+              <li>Is your derailleur straight and functional?</li>
+              <li>Is anything loose, creaking, or otherwise abnormal?</li>
+              <li>Do you have water (& food if you need it?)</li>
+            </ul>
+            <p className="mb-2">
+              Don&apos;t worry if you don&apos;t know what these things are or
+              how to check them! Our coaches and your teammates are here to
+              help!
             </p>
             <p>
               Check your other gear as well. Does your helmet fit properly
@@ -115,15 +125,20 @@ export default function Page() {
           trigger="What is Heja (pronounced \'Hey-ya\')?"
         >
           <AccordionContent>
-            Heja is a scheduling and communication app for sports teams. All
-            team practices and events will be posted in Heja. Heja has an RSVP
-            function: please RSVP whether you will be attending upcoming
-            practices and events so coaches can plan for practice! Best practice
-            is to RSVP no later than 24 hours before an event as the head coach
-            will be creating the ride assignments for coaches and student
-            athletes. Heja is also the primary method by which you will be
-            notified of practice or event cancellations - so be sure your
-            settings allow you to receive updates!
+            <p className="mb-2">
+              Heja is a scheduling and communication app for sports teams. All
+              team practices and events will be posted in Heja. Heja has an RSVP
+              function: please RSVP whether you will be attending upcoming
+              practices and events so coaches can plan for practice! Best
+              practice is to RSVP no later than 24 hours before an event as the
+              head coach will be creating the ride assignments for coaches and
+              student athletes.
+            </p>
+            <p>
+              Heja is also the primary method by which you will be notified of
+              practice or event cancellations - so be sure your settings allow
+              you to receive updates!
+            </p>
           </AccordionContent>
         </CustomAccordionItem>
         <CustomAccordionItem
@@ -133,9 +148,9 @@ export default function Page() {
           <p>
             A bicycle that has multiple gears, also known as a bike with the
             ability to shift. The majority of mountain bikes have gears. If
-            you&apos;re still confused, stand behind your bike and look towards
-            the handlebars. Then, look down at the right side of the rear wheel
-            (this is called the drive side!). If there are multiple gears, you
+            you&apos;re confused, stand behind your bike and look towards the
+            handlebars. Then, look down at the right side (this is called the
+            drive side!) of the rear wheel. If there are multiple gears, you
             have a multi-speed bike!
           </p>
         </CustomAccordionItem>

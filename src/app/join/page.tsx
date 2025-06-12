@@ -30,8 +30,8 @@ export default function Page() {
               <li>Excited about mountain biking</li>
             </ul>
             <p>
-              And that&apos;s it. If you don&apos;t have a working bike, we may
-              be able to provide one for you.
+              If you don&apos;t have a working bike, we may be able to provide
+              one for you.
             </p>
           </div>
         </div>
@@ -61,13 +61,13 @@ export default function Page() {
       </h1>
       <div className="flex w-[94vw] max-w-[600px] flex-col gap-6">
         <p>
-          The Fredericksburg Composite seasons run from January to June for the
-          Spring Season, and July to December for the Fall Season.  Team group
-          rides happen outside of the racing calendar with organized practices
-          when weather and daylight allow. We encourage all student athletes to
-          try a race series, with VAHS in the Spring or NICA in the fall. 
-          Registration for racing series is separate from Fredericksburg
-          Composite Registration.
+          The Fredericksburg Composite spring season runs from January to June,
+          and the fall season runs from July to November. Team group rides
+          happen outside of the racing calendar through organized practices when
+          weather and daylight allow. We encourage all student athletes to try a
+          race series, with VAHS in the spring or NICA in the fall. 
+          Registration for both of these racing series is separate from
+          Fredericksburg Composite Registration.
         </p>
         <p>
           If you’re an adult interested in volunteering to be one of our amazing
