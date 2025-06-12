@@ -128,13 +128,26 @@ export default function Page() {
         </CustomAccordionItem>
         <CustomAccordionItem
           id="8"
-          trigger="Other questions not answered here?"
+          trigger="What is a multi-speed mountain bike?"
         >
-          Send us an email at{" "}
-          <a href="mailto:fredcompmtb@gmail.com">FredCompMTB@gmail.com</a> and
-          we&apos;ll be happy to respond to all inquiries!
+          <p>
+            A bicycle that has multiple gears, also known as a bike with the
+            ability to shift. The majority of mountain bikes have gears. If
+            you&apos;re still confused, stand behind your bike and look towards
+            the handlebars. Then, look down at the right side of the rear wheel
+            (this is called the drive side!). If there are multiple gears, you
+            have a multi-speed bike!
+          </p>
+        </CustomAccordionItem>
+        <CustomAccordionItem id="9" trigger="What is Fred Comp?">
+          <p>Fred Comp is the abbreivation for Fredericksburg Composite.</p>
         </CustomAccordionItem>
       </Accordion>
+      <p className="text-md mt-6 font-light">
+        If you have any other questions, please feel free to send us an email at{" "}
+        <a href="mailto:fredcompmtb@gmail.com">FredCompMTB@gmail.com</a> and
+        we&apos;ll happily respond to all inquiries!
+      </p>
     </div>
   );
 }
