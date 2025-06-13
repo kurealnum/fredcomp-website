@@ -173,7 +173,7 @@ export default function Home() {
                   <div className="inline-block">
                     <div className="flex flex-row flex-wrap gap-1">
                       <p>
-                        A working mountain bike with gears.{" "}
+                        A working mountain bike with gears and a helmet.{" "}
                         <a
                           className="text-secondary hover:underline"
                           href="/faq#loaner-bikes"

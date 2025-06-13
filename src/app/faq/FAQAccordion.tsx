@@ -184,12 +184,11 @@ export default function FAQAccordion() {
         trigger="My student athlete is < 9 years old. Do you make exceptions?"
       >
         <div>
-          We have made exceptions for some riders in the past, given that their
-          parent is willing to ride with them. Please reach out to us at
+          Please reach out to us at{" "}
           <CustomLink href="mailto:fredcompmtb@gmail.com">
             fredcompmtb@gmail.com
           </CustomLink>{" "}
-          if you and your younger rider are interested in joining Fred Comp!
+          to dicuss possible options!
         </div>
       </CustomAccordionItem>
     </Accordion>
