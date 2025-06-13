@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="animate-zoom-in scroll-smooth">
       <body className={`${outfit.className} text-black antialiased`}>
         <NavBar />
         {children}
