@@ -99,43 +99,45 @@ export default function Page() {
           </div>
         </LoadIn>
       </div>
-      <h1 className="my-8 mt-16 text-3xl" id="register">
-        Register
-      </h1>
-      <div className="flex w-[94vw] max-w-[600px] flex-col gap-6">
-        <p>
-          The Fredericksburg Composite spring season runs from January to June,
-          and the fall season runs from July to November. Team group rides
-          happen outside of the racing calendar through organized practices when
-          weather and daylight allow. We encourage all student athletes to try a
-          race series, with VAHS in the spring or NICA in the fall. 
-          Registration for both of these racing series is separate from
-          Fredericksburg Composite Registration.
-        </p>
-        <p>
-          If you’re an adult interested in volunteering to be one of our amazing
-          coaches and ride volunteers, please contact us and consider{" "}
-          <Link href={"/volunteer"}>volunteering</Link>! Your involvement means
-          more #KidsOnBikes!
-        </p>
-        <p>To register, you must submit the following:</p>
-        <ol className="list-inside list-decimal">
-          <li>Registration form</li>
-          <li>
-            Liability waiver (signed and dated - drop off at a ride/practice,
-            mail, or scan and email to fredcompmtb@gmail.com)
-          </li>
-          <li>
-            Code of Conduct (signed and dated - drop off at a ride/practice,
-            mail, or scan and email to fredcompmtb@gmail.com)
-          </li>
-        </ol>
-        <p>
-          There is a also a registration fee of $50 (per season, per student
-          athlete for Fall 2025) that is payable by cash, check, PayPal or
-          credit card.
-        </p>
-      </div>
+      <LoadIn>
+        <h1 className="my-8 mt-16 text-3xl" id="register">
+          Register
+        </h1>
+        <div className="flex w-[94vw] max-w-[600px] flex-col gap-6">
+          <p>
+            The Fredericksburg Composite spring season runs from January to
+            June, and the fall season runs from July to November. Team group
+            rides happen outside of the racing calendar through organized
+            practices when weather and daylight allow. We encourage all student
+            athletes to try a race series, with VAHS in the spring or NICA in
+            the fall.  Registration for both of these racing series is separate
+            from Fredericksburg Composite Registration.
+          </p>
+          <p>
+            If you’re an adult interested in volunteering to be one of our
+            amazing coaches and ride volunteers, please contact us and consider{" "}
+            <Link href={"/volunteer"}>volunteering</Link>! Your involvement
+            means more #KidsOnBikes!
+          </p>
+          <p>To register, you must submit the following:</p>
+          <ol className="list-inside list-decimal">
+            <li>Registration form</li>
+            <li>
+              Liability waiver (signed and dated - drop off at a ride/practice,
+              mail, or scan and email to fredcompmtb@gmail.com)
+            </li>
+            <li>
+              Code of Conduct (signed and dated - drop off at a ride/practice,
+              mail, or scan and email to fredcompmtb@gmail.com)
+            </li>
+          </ol>
+          <p>
+            There is a also a registration fee of $50 (per season, per student
+            athlete for Fall 2025) that is payable by cash, check, PayPal or
+            credit card.
+          </p>
+        </div>
+      </LoadIn>
       <div className="my-4 flex flex-row flex-wrap justify-center gap-4">
         <Button variant={"default"}>
           <Link

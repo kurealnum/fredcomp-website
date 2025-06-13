@@ -64,9 +64,9 @@ export default function Home() {
           className="ml-[50%] h-screen w-[200vh] max-w-[200vh] -translate-x-[50%] scale-105 overflow-clip opacity-85 blur-md 2xl:scale-150"
         />
       </div>
-      <div className="flex flex-col gap-16">
+      <div id="about-us" className="flex flex-col gap-16 pt-8">
         <LoadIn>
-          <RowWrap maxWidth={1200} id="about-us">
+          <RowWrap maxWidth={1200}>
             <div className="w-[90%] max-w-[500px] font-light">
               <p className="mb-3">
                 We’re a youth composite mountain biking team located in
