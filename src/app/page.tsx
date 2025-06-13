@@ -19,8 +19,28 @@ import RowWrap from "@/components/RowWrap";
 import CustomLink from "@/components/CustomLink";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://www.fredericksburgmtb.org",
+    logo: "https://www.fredericksburgmtb.org/fredcomp_logo.png",
+    contactPoint: {
+      contactType: "Person",
+      email: "fredcompmtb@gmail.com",
+      telephone: "+1-540-220-8473",
+    },
+    name: "Fredericksburg Composite Mountain Bike Team",
+    alternateName: "FredComp MTB Team",
+    email: "fredcompmtb@gmail.com",
+    description:
+      "Fredericksburg Composite is a youth/interscholastic mountain biking team in Fredericksburg, Virginia.",
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      ></script>
       <div className="absolute right-0 left-[50%] z-10 w-screen -translate-x-[50%] translate-y-[37vh] overflow-hidden [@media(max-height:700px)]:translate-y-[30vh]">
         <h1 className="w-screen text-center text-4xl text-white text-shadow-lg/25 md:text-5xl lg:text-6xl">
           Fredericksburg Composite Mountain Bike Team
