@@ -4,6 +4,7 @@ import CMV from "@img/custommetals.png";
 import Image from "next/image";
 import Link from "next/link";
 import CustomLink from "./CustomLink";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export default function Footer() {
   return (
@@ -50,18 +51,35 @@ export default function Footer() {
           <h1 className="mx-auto w-min font-normal text-nowrap">Sponsors</h1>
           <ul className="flex flex-col items-center justify-center">
             <li>
-              <Image
-                className="w-[300px]"
-                src={Monolith}
-                alt="Monolith Performance provides high quality nutrition for endurance athletes seeking optimized science-backed products that provide fuel for the extra mile at a price point that allows you to focus on your ride, not your wallet."
-              />
+              <a href="https://monolithperformance.com/">
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Image className="w-[300px]" src={Monolith} alt="" />
+                  </TooltipTrigger>
+                  <TooltipContent className="border-accent border border-solid">
+                    <p className="max-w-[200px] text-white">
+                      High performance science-backed athlete fueling solutions
+                      that don&apos;t break the bank.
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </a>
             </li>
             <li>
-              <Image
-                className="w-[250px]"
-                src={CMV}
-                alt="Custom Metals of Virginia provides exceptional custom metal fabrication to homeowners, architects, and businesses."
-              />
+              <a href="http://custommetalsofvirginia.com/">
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Image className="w-[250px]" src={CMV} alt="" />
+                  </TooltipTrigger>
+                  <TooltipContent className="border-accent border border-solid">
+                    <p className="max-w-[200px] text-white">
+                      Custom Metals of Virginia provides exceptional custom
+                      metal fabrication to homeowners, architects, and
+                      businesses.
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </a>
             </li>
             <li className="mt-2">
               <CustomLink href={"/donate"}>
