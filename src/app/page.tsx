@@ -22,6 +22,8 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import SkeletonImage from "@/components/SkeletonImage";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Home() {
   const structuredData = {
@@ -89,9 +91,10 @@ export default function Home() {
           <Tooltip>
             <TooltipTrigger>
               <Image
-                className="w-[90%] max-w-[500px]"
+                className="mx-auto w-[90%] max-w-[500px]"
                 src={TeamPhoto}
                 alt="Fredericksburg Composite team photo for the Spring 2025 season"
+                placeholder="blur"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -116,9 +119,10 @@ export default function Home() {
           <Tooltip>
             <TooltipTrigger>
               <Image
-                className="w-[90%] max-w-[333px]"
+                className="mx-auto w-[90%] max-w-[333px]"
                 alt="Lily attemping an awesome wheelie"
                 src={LilyOnBike}
+                placeholder="blur"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -142,9 +146,10 @@ export default function Home() {
           <Tooltip>
             <TooltipTrigger>
               <Image
-                className="w-[90%] max-w-[333px]"
+                className="mx-auto w-[90%] max-w-[333px]"
                 alt="Oscar, Donovin, and Scott with Coach Dave in the background"
                 src={LakeWithCoachDave}
+                placeholder="blur"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -161,10 +166,15 @@ export default function Home() {
               <li>
                 <div className="inline-block">
                   <div className="flex flex-row flex-wrap gap-1">
-                    <p>A working mountain bike with gears. </p>
-                    <CustomLink href="/faq#loaner-bikes">
-                      But what if I don&apos;t have a bike?
-                    </CustomLink>
+                    <p>
+                      A working mountain bike with gears.{" "}
+                      <a
+                        className="text-secondary hover:underline"
+                        href="/faq#loaner-bikes"
+                      >
+                        But what if I don&apos;t have a bike?
+                      </a>
+                    </p>
                   </div>
                 </div>
               </li>
@@ -194,6 +204,7 @@ export default function Home() {
                       src={Carousel1}
                       alt="Crosby (left) and Milo (right) lifting Lucas"
                       className="mx-auto w-[90vw] max-w-[300px]"
+                      placeholder="blur"
                     />
                   </TooltipTrigger>
                   <TooltipContent>
@@ -210,6 +221,7 @@ export default function Home() {
                       src={Carousel2}
                       alt="Coach Pete with his daughters, Emma (left) and Lily (right)"
                       className="mx-auto w-[90vw] max-w-[300px]"
+                      placeholder="blur"
                     />
                   </TooltipTrigger>
                   <TooltipContent>
@@ -227,6 +239,7 @@ export default function Home() {
                       src={Carousel3}
                       alt="(From left to right) Emma C., Brianna, Lily, and Emma S."
                       className="mx-auto w-[90vw] max-w-[300px]"
+                      placeholder="blur"
                     />
                   </TooltipTrigger>
                   <TooltipContent>
