@@ -63,7 +63,7 @@ export default function Page() {
               <Image
                 alt="Coach Ron and his son Ronald"
                 src={RonAndRon}
-                className="mx-auto w-[94vw] max-w-[500px]"
+                className="mx-auto w-[94vw] max-w-[500px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                 placeholder="blur"
               />
             </TooltipTrigger>
@@ -111,7 +111,7 @@ export default function Page() {
               <Image
                 alt="Student athletes in the field"
                 src={TeamInField}
-                className="mx-auto max-h-[333px] w-[94vw] max-w-[500px]"
+                className="mx-auto max-h-[333px] w-[94vw] max-w-[500px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                 placeholder="blur"
               />
             </TooltipTrigger>

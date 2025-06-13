@@ -91,7 +91,7 @@ export default function Home() {
             <Tooltip>
               <TooltipTrigger>
                 <Image
-                  className="mx-auto w-[90%] max-w-[500px]"
+                  className="mx-auto w-[90%] max-w-[500px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                   src={TeamPhoto}
                   alt="Fredericksburg Composite team photo for the Spring 2025 season"
                   placeholder="blur"
@@ -123,7 +123,7 @@ export default function Home() {
             <Tooltip>
               <TooltipTrigger>
                 <Image
-                  className="mx-auto w-[90%] max-w-[333px]"
+                  className="mx-auto w-[90%] max-w-[333px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                   alt="Lily attemping an awesome wheelie"
                   src={LilyOnBike}
                   placeholder="blur"
@@ -152,7 +152,7 @@ export default function Home() {
             <Tooltip>
               <TooltipTrigger>
                 <Image
-                  className="mx-auto w-[90%] max-w-[333px]"
+                  className="mx-auto w-[90%] max-w-[333px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                   alt="Oscar, Donovin, and Scott with Coach Dave in the background"
                   src={LakeWithCoachDave}
                   placeholder="blur"

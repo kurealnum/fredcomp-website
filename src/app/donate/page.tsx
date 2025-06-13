@@ -43,7 +43,7 @@ export default function Page() {
           <Tooltip>
             <TooltipTrigger>
               <Image
-                className="mx-auto w-[94vw] max-w-[500px]"
+                className="mx-auto w-[94vw] max-w-[500px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                 alt="James going through a creek at Blue Ridge School"
                 src={James}
                 placeholder="blur"
@@ -80,7 +80,7 @@ export default function Page() {
           <Tooltip>
             <TooltipTrigger>
               <Image
-                className="mx-auto w-[94vw] max-w-[500px]"
+                className="mx-auto w-[94vw] max-w-[500px] transition-shadow duration-500 ease-out hover:shadow-[0px_0px_14px_2px_rgba(0,_136,_197,_0.7)]"
                 alt="Coach Steve talking about bike maintenance"
                 src={CoachSteve}
                 placeholder="blur"
