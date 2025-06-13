@@ -61,6 +61,7 @@ export default function Page() {
               alt="Coach Ron and his son Ronald"
               src={RonAndRon}
               className="mx-auto w-[94vw] max-w-[500px]"
+              placeholder="blur"
             />
           </TooltipTrigger>
           <TooltipContent>
@@ -105,6 +106,7 @@ export default function Page() {
               alt="Student athletes in the field"
               src={TeamInField}
               className="mx-auto max-h-[333px] w-[94vw] max-w-[500px]"
+              placeholder="blur"
             />
           </TooltipTrigger>
           <TooltipContent>

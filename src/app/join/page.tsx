@@ -29,6 +29,7 @@ export default function Page() {
                 alt="Team photo by the lake"
                 className="mx-auto w-[94vw] max-w-[500px]"
                 src={TeamPhoto}
+                placeholder="blur"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -65,6 +66,7 @@ export default function Page() {
                 className="mx-auto max-h-[333px] w-auto"
                 alt="Easton carrying Ronald"
                 src={EastonAndRonald}
+                placeholder="blur"
               />
             </TooltipTrigger>
             <TooltipContent>

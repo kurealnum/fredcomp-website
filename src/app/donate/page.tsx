@@ -44,6 +44,7 @@ export default function Page() {
               className="mx-auto w-[94vw] max-w-[500px]"
               alt="James going through a creek at Blue Ridge School"
               src={James}
+              placeholder="blur"
             />
           </TooltipTrigger>
           <TooltipContent>
@@ -78,6 +79,7 @@ export default function Page() {
               className="mx-auto w-[94vw] max-w-[500px]"
               alt="Coach Steve talking about bike maintenance"
               src={CoachSteve}
+              placeholder="blur"
             />
           </TooltipTrigger>
           <TooltipContent>
