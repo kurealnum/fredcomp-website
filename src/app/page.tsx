@@ -21,6 +21,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import LoadIn from "@/components/LoadIn";
 
 export default function Home() {
   const structuredData = {
@@ -64,193 +65,204 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col gap-16">
-        <RowWrap maxWidth={1200} id="about-us">
-          <div className="w-[90%] max-w-[500px] font-light">
-            <p className="mb-3">
-              We’re a youth composite mountain biking team located in
-              Fredericksburg, Virginia. Our goal is to get more kids on bikes
-              and build the foundation for a lifelong enjoyment of mountain
-              biking and having fun outdoors.
-            </p>
-            <p className="mb-3">
-              We participate in two racing seasons for student athletes who are
-              interested in racing, and we will prepare all student athletes of
-              all riding abilities and skill level for the racing scene.{" "}
-            </p>
-            <p className="mb-3">
-              That being said, student athletes are not required to race.
-              Mountain bike racing is a unique team environment where there are
-              no cuts and there is no bench; everyone rides and contributes to
-              the team no matter their level of ability, fitness, or interest in
-              competition.
-            </p>
-          </div>
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                className="mx-auto w-[90%] max-w-[500px]"
-                src={TeamPhoto}
-                alt="Fredericksburg Composite team photo for the Spring 2025 season"
-                placeholder="blur"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p className="text-white">
-                Fredericksburg Composite team photo for the Spring 2025 season
+        <LoadIn>
+          <RowWrap maxWidth={1200} id="about-us">
+            <div className="w-[90%] max-w-[500px] font-light">
+              <p className="mb-3">
+                We’re a youth composite mountain biking team located in
+                Fredericksburg, Virginia. Our goal is to get more kids on bikes
+                and build the foundation for a lifelong enjoyment of mountain
+                biking and having fun outdoors.
               </p>
-            </TooltipContent>
-          </Tooltip>
-        </RowWrap>
-        <div className="mx-auto flex max-w-[470px] flex-row items-center justify-around gap-2">
-          <Button variant={"secondary"} className="cursor-pointer">
-            <Link href={"/join"}>Join the team</Link>
-          </Button>
-          <Button variant={"secondary"} className="cursor-pointer">
-            <Link href={"/volunteer"}>Volunteer or Coach</Link>
-          </Button>
-          <Button variant={"secondary"} className="cursor-pointer">
-            <Link href={"/donate"}>Donate</Link>
-          </Button>
-        </div>
-        <RowWrap maxWidth={1200}>
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                className="mx-auto w-[90%] max-w-[333px]"
-                alt="Lily attemping an awesome wheelie"
-                src={LilyOnBike}
-                placeholder="blur"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p className="text-white">Lily attempting an awesome wheelie</p>
-            </TooltipContent>
-          </Tooltip>
-          <div className="mt-12 mb-16 max-w-[600px]">
-            <h1 className="mx-auto mb-2 w-min text-2xl text-nowrap">
-              What we&apos;re about
-            </h1>
-            <ul className="mx-auto mb-8 w-[90vw] max-w-[600px] list-inside list-disc text-center font-light">
-              <li>
-                A team culture that is welcoming, safe, and fun for everyone!
-              </li>
-              <li>Having fun on bikes and helping others do the same</li>
-              <li>Improving ourselves, both physically and mentally</li>
-            </ul>
-          </div>
-        </RowWrap>
-        <RowWrap maxWidth={1200}>
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                className="mx-auto w-[90%] max-w-[333px]"
-                alt="Oscar, Donovin, and Scott with Coach Dave in the background"
-                src={LakeWithCoachDave}
-                placeholder="blur"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p className="text-white">
-                Oscar, Donovin, and Scott with Coach Dave in the background
+              <p className="mb-3">
+                We participate in two racing seasons for student athletes who
+                are interested in racing, and we will prepare all student
+                athletes of all riding abilities and skill level for the racing
+                scene.{" "}
               </p>
-            </TooltipContent>
-          </Tooltip>
-          <div>
-            <h1 className="mx-auto mb-2 w-min list-disc text-2xl text-nowrap">
-              What you need
-            </h1>
-            <ul className="mx-auto mb-8 w-[90vw] max-w-[600px] list-inside list-disc text-center font-light">
-              <li>
-                <div className="inline-block">
-                  <div className="flex flex-row flex-wrap gap-1">
-                    <p>
-                      A working mountain bike with gears.{" "}
-                      <a
-                        className="text-secondary hover:underline"
-                        href="/faq#loaner-bikes"
-                      >
-                        But what if I don&apos;t have a bike?
-                      </a>
-                    </p>
+              <p className="mb-3">
+                That being said, student athletes are not required to race.
+                Mountain bike racing is a unique team environment where there
+                are no cuts and there is no bench; everyone rides and
+                contributes to the team no matter their level of ability,
+                fitness, or interest in competition.
+              </p>
+            </div>
+            <Tooltip>
+              <TooltipTrigger>
+                <Image
+                  className="mx-auto w-[90%] max-w-[500px]"
+                  src={TeamPhoto}
+                  alt="Fredericksburg Composite team photo for the Spring 2025 season"
+                  placeholder="blur"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-white">
+                  Fredericksburg Composite team photo for the Spring 2025 season
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </RowWrap>
+        </LoadIn>
+        <LoadIn>
+          <div className="mx-auto flex max-w-[470px] flex-row items-center justify-around gap-2">
+            <Button variant={"secondary"} className="cursor-pointer">
+              <Link href={"/join"}>Join the team</Link>
+            </Button>
+            <Button variant={"secondary"} className="cursor-pointer">
+              <Link href={"/volunteer"}>Volunteer or Coach</Link>
+            </Button>
+            <Button variant={"secondary"} className="cursor-pointer">
+              <Link href={"/donate"}>Donate</Link>
+            </Button>
+          </div>
+        </LoadIn>
+        <LoadIn>
+          <RowWrap maxWidth={1200}>
+            <Tooltip>
+              <TooltipTrigger>
+                <Image
+                  className="mx-auto w-[90%] max-w-[333px]"
+                  alt="Lily attemping an awesome wheelie"
+                  src={LilyOnBike}
+                  placeholder="blur"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-white">Lily attempting an awesome wheelie</p>
+              </TooltipContent>
+            </Tooltip>
+            <div className="mt-12 mb-16 max-w-[600px]">
+              <h1 className="mx-auto mb-2 w-min text-2xl text-nowrap">
+                What we&apos;re about
+              </h1>
+              <ul className="mx-auto mb-8 w-[90vw] max-w-[600px] list-inside list-disc text-center font-light">
+                <li>
+                  A team culture that is welcoming, safe, and fun for everyone!
+                </li>
+                <li>Having fun on bikes and helping others do the same</li>
+                <li>Improving ourselves, both physically and mentally</li>
+              </ul>
+            </div>
+          </RowWrap>
+        </LoadIn>
+        <LoadIn>
+          <RowWrap maxWidth={1200}>
+            <Tooltip>
+              <TooltipTrigger>
+                <Image
+                  className="mx-auto w-[90%] max-w-[333px]"
+                  alt="Oscar, Donovin, and Scott with Coach Dave in the background"
+                  src={LakeWithCoachDave}
+                  placeholder="blur"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-white">
+                  Oscar, Donovin, and Scott with Coach Dave in the background
+                </p>
+              </TooltipContent>
+            </Tooltip>
+            <div>
+              <h1 className="mx-auto mb-2 w-min list-disc text-2xl text-nowrap">
+                What you need
+              </h1>
+              <ul className="mx-auto mb-8 w-[90vw] max-w-[600px] list-inside list-disc text-center font-light">
+                <li>
+                  <div className="inline-block">
+                    <div className="flex flex-row flex-wrap gap-1">
+                      <p>
+                        A working mountain bike with gears.{" "}
+                        <a
+                          className="text-secondary hover:underline"
+                          href="/faq#loaner-bikes"
+                        >
+                          But what if I don&apos;t have a bike?
+                        </a>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                Means of carrying water. Water bottles, hydration packs, or a
-                parent!
-              </li>
-              <li>A positive attitude and a smile!</li>
-            </ul>
+                </li>
+                <li>
+                  Means of carrying water. Water bottles, hydration packs, or a
+                  parent!
+                </li>
+                <li>A positive attitude and a smile!</li>
+              </ul>
+            </div>
+          </RowWrap>
+        </LoadIn>
+        <LoadIn>
+          <div className="mx-auto flex max-w-[1020px] flex-row flex-wrap items-center justify-center gap-8 font-light">
+            <p className="w-[95vw] max-w-[600px]">
+              Fredericksburg Composite MTB Team and it&apos;s members are
+              inclusive, equitable, and respectful to our fellow riders and
+              greater community. We stand with all who share these values and do
+              not tolerate racism, homophobia, or any other form of hate or
+              discrimination. We will continue to work towards inclusivity,
+              equity, and diversity as a team. 
+            </p>
+            <Carousel className="mx-10 w-[70vw] max-w-[300px]">
+              <CarouselContent>
+                <CarouselItem>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={Carousel1}
+                        alt="Crosby (left) and Milo (right) lifting Lucas"
+                        className="mx-auto w-[90vw] max-w-[300px]"
+                        placeholder="blur"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-white">
+                        Crosby (left) and Milo (right) lifting Lucas
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </CarouselItem>
+                <CarouselItem>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={Carousel2}
+                        alt="Coach Pete with his daughters, Emma (left) and Lily (right)"
+                        className="mx-auto w-[90vw] max-w-[300px]"
+                        placeholder="blur"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-white">
+                        Coach Pete with his daughters, Emma (left) and Lily
+                        (right)
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </CarouselItem>
+                <CarouselItem>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={Carousel3}
+                        alt="(From left to right) Emma C., Brianna, Lily, and Emma S."
+                        className="mx-auto w-[90vw] max-w-[300px]"
+                        placeholder="blur"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-white">
+                        (From left to right) Emma C., Brianna, Lily, and Emma S.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
-        </RowWrap>
-        <div className="mx-auto flex max-w-[1020px] flex-row flex-wrap items-center justify-center gap-8 font-light">
-          <p className="w-[95vw] max-w-[600px]">
-            Fredericksburg Composite MTB Team and it&apos;s members are
-            inclusive, equitable, and respectful to our fellow riders and
-            greater community. We stand with all who share these values and do
-            not tolerate racism, homophobia, or any other form of hate or
-            discrimination. We will continue to work towards inclusivity,
-            equity, and diversity as a team. 
-          </p>
-          <Carousel className="mx-10 w-[70vw] max-w-[300px]">
-            <CarouselContent>
-              <CarouselItem>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <Image
-                      src={Carousel1}
-                      alt="Crosby (left) and Milo (right) lifting Lucas"
-                      className="mx-auto w-[90vw] max-w-[300px]"
-                      placeholder="blur"
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p className="text-white">
-                      Crosby (left) and Milo (right) lifting Lucas
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </CarouselItem>
-              <CarouselItem>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <Image
-                      src={Carousel2}
-                      alt="Coach Pete with his daughters, Emma (left) and Lily (right)"
-                      className="mx-auto w-[90vw] max-w-[300px]"
-                      placeholder="blur"
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p className="text-white">
-                      Coach Pete with his daughters, Emma (left) and Lily
-                      (right)
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </CarouselItem>
-              <CarouselItem>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <Image
-                      src={Carousel3}
-                      alt="(From left to right) Emma C., Brianna, Lily, and Emma S."
-                      className="mx-auto w-[90vw] max-w-[300px]"
-                      placeholder="blur"
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p className="text-white">
-                      (From left to right) Emma C., Brianna, Lily, and Emma S.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+        </LoadIn>
       </div>
     </>
   );

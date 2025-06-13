@@ -10,6 +10,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import LoadIn from "@/components/LoadIn";
 
 export const metadata: Metadata = {
   title: "Join us! - FredComp MTB",
@@ -22,74 +23,81 @@ export default function Page() {
         Join the team!
       </h1>
       <div className="flex flex-row flex-wrap items-baseline justify-center gap-8">
-        <div className="flex max-w-[600px] flex-col">
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                alt="Team photo by the lake"
-                className="mx-auto w-[94vw] max-w-[500px]"
-                src={TeamPhoto}
-                placeholder="blur"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p className="text-white">Team photo by the lake</p>
-            </TooltipContent>
-          </Tooltip>
-          <h2 className="my-4 text-center text-xl">
-            You&apos;re always a good fit for us!
-          </h2>
-          <div className="mx-auto w-[95%]">
-            <p>
-              We&apos;d be happy to have you join Fred Comp! We&apos;re looking
-              for riders who are:
-            </p>
-            <ul className="mb-2 list-inside list-disc">
-              <li>
-                9 years or older{" "}
-                <CustomLink href="/faq#age-exceptions">
-                  (but we do make exceptions!)
-                </CustomLink>
-              </li>
-              <li>Excited about mountain biking</li>
-            </ul>
-            <p>
-              If you don&apos;t have a working bike, we may be able to provide
-              one for you.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                className="mx-auto max-h-[333px] w-auto"
-                alt="Easton carrying Ronald"
-                src={EastonAndRonald}
-                placeholder="blur"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p className="text-white">Easton carrying Ronald</p>
-            </TooltipContent>
-          </Tooltip>
-          <h2 className="my-4 text-center text-xl">Student Athlete Inquiry</h2>
-          <div className="mx-auto w-[95%] max-w-[600px]">
-            <div className="mb-2">
-              Please use{" "}
-              <CustomLink href="https://forms.gle/U3jdPCcdpH2qMc5c6">
-                this form
-              </CustomLink>{" "}
-              to inquire about your student athlete joining the team!
+        <LoadIn>
+          <div className="flex max-w-[600px] flex-col">
+            <Tooltip>
+              <TooltipTrigger>
+                <Image
+                  alt="Team photo by the lake"
+                  className="mx-auto w-[94vw] max-w-[500px]"
+                  src={TeamPhoto}
+                  placeholder="blur"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-white">Team photo by the lake</p>
+              </TooltipContent>
+            </Tooltip>
+            <h2 className="my-4 text-center text-xl">
+              You&apos;re always a good fit for us!
+            </h2>
+            <div className="mx-auto w-[95%]">
+              <p>
+                We&apos;d be happy to have you join Fred Comp! We&apos;re
+                looking for riders who are:
+              </p>
+              <ul className="mb-2 list-inside list-disc">
+                <li>
+                  9 years or older{" "}
+                  <CustomLink href="/faq#age-exceptions">
+                    (but we do make exceptions!)
+                  </CustomLink>
+                </li>
+                <li>Excited about mountain biking</li>
+              </ul>
+              <p>
+                If you don&apos;t have a working bike, we may be able to provide
+                one for you.
+              </p>
             </div>
-            <p>
-              This form is only an inquiry, not means of registration. Note that
-              student athletes are not required to have any previous experience.
-              The “Experience” field in the form is only present to help us
-              gauge which group your student athlete may be best suited to join.
-            </p>
           </div>
-        </div>
+        </LoadIn>
+        <LoadIn>
+          <div className="flex flex-col">
+            <Tooltip>
+              <TooltipTrigger>
+                <Image
+                  className="mx-auto max-h-[333px] w-auto"
+                  alt="Easton carrying Ronald"
+                  src={EastonAndRonald}
+                  placeholder="blur"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-white">Easton carrying Ronald</p>
+              </TooltipContent>
+            </Tooltip>
+            <h2 className="my-4 text-center text-xl">
+              Student Athlete Inquiry
+            </h2>
+            <div className="mx-auto w-[95%] max-w-[600px]">
+              <div className="mb-2">
+                Please use{" "}
+                <CustomLink href="https://forms.gle/U3jdPCcdpH2qMc5c6">
+                  this form
+                </CustomLink>{" "}
+                to inquire about your student athlete joining the team!
+              </div>
+              <p>
+                This form is only an inquiry, not means of registration. Note
+                that student athletes are not required to have any previous
+                experience. The “Experience” field in the form is only present
+                to help us gauge which group your student athlete may be best
+                suited to join.
+              </p>
+            </div>
+          </div>
+        </LoadIn>
       </div>
       <h1 className="my-8 mt-16 text-3xl" id="register">
         Register

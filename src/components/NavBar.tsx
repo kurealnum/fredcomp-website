@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <NavigationMenu className="bg-secondary w-screen max-w-screen flex-row justify-center text-white text-shadow-lg/15 sm:justify-between">
+    <NavigationMenu className="bg-secondary h-[40px] w-screen max-w-screen flex-row justify-center text-white text-shadow-lg/15 sm:justify-between">
       <div>
         <NavigationMenuLink className="pr-0 max-sm:w-0 max-sm:p-0" href="/">
           <Image src={"/fredcomp_logo.png"} alt="" width={50} height={50} />
