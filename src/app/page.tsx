@@ -196,10 +196,10 @@ export default function Home() {
         <LoadIn>
           <div className="mx-auto flex max-w-[1020px] flex-row flex-wrap items-center justify-center gap-8 font-light">
             <p className="w-[95vw] max-w-[600px]">
-              Fredericksburg Composite MTB Team and it&apos;s members are
-              inclusive, equitable, and respectful to our fellow riders and
-              greater community. We stand with all who share these values and do
-              not tolerate racism, homophobia, or any other form of hate or
+              Fredericksburg Composite MTB Team and its members are inclusive,
+              equitable, and respectful to our fellow riders and greater
+              community. We stand with all who share these values and do not
+              tolerate racism, homophobia, or any other form of hate or
               discrimination. We will continue to work towards inclusivity,
               equity, and diversity as a team. 
             </p>

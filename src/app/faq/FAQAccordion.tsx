@@ -188,7 +188,7 @@ export default function FAQAccordion() {
           <CustomLink href="mailto:fredcompmtb@gmail.com">
             fredcompmtb@gmail.com
           </CustomLink>{" "}
-          to dicuss possible options!
+          to discuss possible options!
         </div>
       </CustomAccordionItem>
     </Accordion>
