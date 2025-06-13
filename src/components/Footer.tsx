@@ -97,7 +97,7 @@ export default function Footer() {
       <div className="flex flex-row flex-wrap justify-center gap-4 py-4">
         <div className="flex flex-row gap-1">
           Website designed & developed by
-          <CustomLink href="/faq#loaner-bikes">Oscar Gaske</CustomLink>
+          <CustomLink href="https://oscargaske.me">Oscar Gaske</CustomLink>
         </div>
         <p>Majority of photos taken by Emily Lumpkins</p>
       </div>

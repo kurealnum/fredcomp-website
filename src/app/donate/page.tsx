@@ -2,6 +2,11 @@ import James from "@img/james_through_creek.png";
 import CoachSteve from "@img/coachsteve_and_bike.png";
 import Image from "next/image";
 import RowWrap from "@/components/RowWrap";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Donate to us! - FredComp MTB",
+};
 
 export default function Page() {
   return (

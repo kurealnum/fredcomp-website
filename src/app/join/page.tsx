@@ -4,6 +4,11 @@ import EastonAndRonald from "@img/easton_and_ronald.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import CustomLink from "@/components/CustomLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Join us! - FredComp MTB",
+};
 
 export default function Page() {
   return (

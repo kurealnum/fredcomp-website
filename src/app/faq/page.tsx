@@ -1,9 +1,14 @@
 import CustomAccordionItem from "@/components/CustomAccordionItem";
 import { Accordion, AccordionContent } from "@/components/ui/accordion";
+import { Metadata } from "next";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "FAQ - FredComp MTB",
+};
+
 export default function Page() {
-  let structuredData = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [

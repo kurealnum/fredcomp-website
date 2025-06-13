@@ -2,7 +2,12 @@ import CustomLink from "@/components/CustomLink";
 import RowWrap from "@/components/RowWrap";
 import RonAndRon from "@img/ron_and_ron.jpg";
 import TeamInField from "@img/team_in_field.jpg";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Volunteer for FredComp! - FredComp MTB",
+};
 
 export default function Page() {
   return (
