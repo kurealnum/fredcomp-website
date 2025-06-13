@@ -129,14 +129,14 @@ export default function Home() {
             </h1>
             <ul className="mx-auto mb-8 w-[90vw] max-w-[600px] list-inside list-disc text-center font-light">
               <li>
-                <li className="inline-block">
+                <div className="inline-block">
                   <div className="flex flex-row flex-wrap gap-1">
                     <p>A working mountain bike with gears. </p>
                     <CustomLink href="/faq#loaner-bikes">
                       But what if I don&apos;t have a bike?
                     </CustomLink>
                   </div>
-                </li>
+                </div>
               </li>
               <li>
                 Means of carrying water. Water bottles, hydration packs, or a
