@@ -83,6 +83,14 @@ export default function Page() {
           text: "Fred Comp is short for Fredericksburg Composite.",
         },
       },
+      {
+        "@type": "Question",
+        name: "My student athlete is < 9 years old. Do you make exceptions?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We have made exceptions for some riders in the past, given that their parent is willing to ride with them. Please reach out to us at fredcompmtb@gmail.com if you and your younger rider are interested in joining Fred Comp!",
+        },
+      },
     ],
   };
 
