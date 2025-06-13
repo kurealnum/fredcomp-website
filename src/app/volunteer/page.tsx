@@ -1,5 +1,10 @@
 import CustomLink from "@/components/CustomLink";
 import RowWrap from "@/components/RowWrap";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import RonAndRon from "@img/ron_and_ron.jpg";
 import TeamInField from "@img/team_in_field.jpg";
 import { Metadata } from "next";
@@ -50,11 +55,18 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <Image
-          alt="Coach Ron and his son Ronald"
-          src={RonAndRon}
-          className="mx-auto w-[94vw] max-w-[500px]"
-        />
+        <Tooltip>
+          <TooltipTrigger>
+            <Image
+              alt="Coach Ron and his son Ronald"
+              src={RonAndRon}
+              className="mx-auto w-[94vw] max-w-[500px]"
+            />
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-white">Coach Ron and his son Ronald</p>
+          </TooltipContent>
+        </Tooltip>
       </RowWrap>
       <RowWrap maxWidth={1200} className="mt-8">
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
@@ -87,11 +99,18 @@ export default function Page() {
             we have, the more student athletes we can bring to the team! 
           </p>
         </div>
-        <Image
-          alt="Student athletes in the field"
-          src={TeamInField}
-          className="mx-auto max-h-[333px] w-[94vw] max-w-[500px]"
-        />
+        <Tooltip>
+          <TooltipTrigger>
+            <Image
+              alt="Student athletes in the field"
+              src={TeamInField}
+              className="mx-auto max-h-[333px] w-[94vw] max-w-[500px]"
+            />
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-white">Student athletes in the field</p>
+          </TooltipContent>
+        </Tooltip>
       </RowWrap>
     </div>
   );

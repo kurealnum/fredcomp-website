@@ -3,6 +3,11 @@ import CoachSteve from "@img/coachsteve_and_bike.png";
 import Image from "next/image";
 import RowWrap from "@/components/RowWrap";
 import { Metadata } from "next";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: "Donate to us! - FredComp MTB",
@@ -33,11 +38,20 @@ export default function Page() {
             fall or spring season!
           </p>
         </div>
-        <Image
-          className="mx-auto w-[94vw] max-w-[500px]"
-          alt="James going through a creek at Blue Ridge School"
-          src={James}
-        />
+        <Tooltip>
+          <TooltipTrigger>
+            <Image
+              className="mx-auto w-[94vw] max-w-[500px]"
+              alt="James going through a creek at Blue Ridge School"
+              src={James}
+            />
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-white">
+              James going through a creek at Blue Ridge School
+            </p>
+          </TooltipContent>
+        </Tooltip>
       </RowWrap>
       <RowWrap maxWidth={1200} className="mt-12">
         <div className="mx-auto mb-8 flex w-[95%] max-w-[600px] flex-col items-center justify-center gap-4">
@@ -58,11 +72,20 @@ export default function Page() {
             athletes who <i>need</i> them!
           </p>
         </div>
-        <Image
-          className="mx-auto w-[94vw] max-w-[500px]"
-          alt="Coach steve talking about bike maintenance"
-          src={CoachSteve}
-        />
+        <Tooltip>
+          <TooltipTrigger>
+            <Image
+              className="mx-auto w-[94vw] max-w-[500px]"
+              alt="Coach Steve talking about bike maintenance"
+              src={CoachSteve}
+            />
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-white">
+              Coach Steve talking about bike maintenance
+            </p>
+          </TooltipContent>
+        </Tooltip>
       </RowWrap>
       <h1 className="my-8 mt-12 text-center text-3xl">
         Sponsor/partner with us

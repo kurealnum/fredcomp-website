@@ -17,6 +17,11 @@ import Carousel2 from "@img/homepage_carousel_2.jpg";
 import Carousel3 from "@img/homepage_carousel_3.jpg";
 import RowWrap from "@/components/RowWrap";
 import CustomLink from "@/components/CustomLink";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Home() {
   const structuredData = {
@@ -81,11 +86,20 @@ export default function Home() {
               competition.
             </p>
           </div>
-          <Image
-            className="w-[90%] max-w-[500px]"
-            src={TeamPhoto}
-            alt="Fredericksburg Composite team photo for the Spring 2025 season"
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Image
+                className="w-[90%] max-w-[500px]"
+                src={TeamPhoto}
+                alt="Fredericksburg Composite team photo for the Spring 2025 season"
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-white">
+                Fredericksburg Composite team photo for the Spring 2025 season
+              </p>
+            </TooltipContent>
+          </Tooltip>
         </RowWrap>
         <div className="mx-auto flex max-w-[470px] flex-row items-center justify-around gap-2">
           <Button variant={"secondary"} className="cursor-pointer">
@@ -99,11 +113,18 @@ export default function Home() {
           </Button>
         </div>
         <RowWrap maxWidth={1200}>
-          <Image
-            className="w-[90%] max-w-[333px]"
-            alt="Lily attemping an awesome wheelie"
-            src={LilyOnBike}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Image
+                className="w-[90%] max-w-[333px]"
+                alt="Lily attemping an awesome wheelie"
+                src={LilyOnBike}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-white">Lily attempting an awesome wheelie</p>
+            </TooltipContent>
+          </Tooltip>
           <div className="mt-12 mb-16 max-w-[600px]">
             <h1 className="mx-auto mb-2 w-min text-2xl text-nowrap">
               What we&apos;re about
@@ -118,11 +139,20 @@ export default function Home() {
           </div>
         </RowWrap>
         <RowWrap maxWidth={1200}>
-          <Image
-            className="w-[90%] max-w-[333px]"
-            alt="Oscar, Donovin, and Scott with Coach Dave in the background"
-            src={LakeWithCoachDave}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Image
+                className="w-[90%] max-w-[333px]"
+                alt="Oscar, Donovin, and Scott with Coach Dave in the background"
+                src={LakeWithCoachDave}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-white">
+                Oscar, Donovin, and Scott with Coach Dave in the background
+              </p>
+            </TooltipContent>
+          </Tooltip>
           <div>
             <h1 className="mx-auto mb-2 w-min list-disc text-2xl text-nowrap">
               What you need
@@ -158,25 +188,53 @@ export default function Home() {
           <Carousel className="mx-10 w-[70vw] max-w-[300px]">
             <CarouselContent>
               <CarouselItem>
-                <Image
-                  src={Carousel1}
-                  alt="Crosby (left) and Milo (right) lifting Lucas"
-                  className="mx-auto w-[90vw] max-w-[300px]"
-                />
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Image
+                      src={Carousel1}
+                      alt="Crosby (left) and Milo (right) lifting Lucas"
+                      className="mx-auto w-[90vw] max-w-[300px]"
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="text-white">
+                      Crosby (left) and Milo (right) lifting Lucas
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
               </CarouselItem>
               <CarouselItem>
-                <Image
-                  src={Carousel2}
-                  alt="Coach Pete with his daughters, Emma (left) and Lily (right)"
-                  className="mx-auto w-[90vw] max-w-[300px]"
-                />
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Image
+                      src={Carousel2}
+                      alt="Coach Pete with his daughters, Emma (left) and Lily (right)"
+                      className="mx-auto w-[90vw] max-w-[300px]"
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="text-white">
+                      Coach Pete with his daughters, Emma (left) and Lily
+                      (right)
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
               </CarouselItem>
               <CarouselItem>
-                <Image
-                  src={Carousel3}
-                  alt="(From left to right) Emma C., Brianna, Lily, and Emma S."
-                  className="mx-auto w-[90vw] max-w-[300px]"
-                />
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Image
+                      src={Carousel3}
+                      alt="(From left to right) Emma C., Brianna, Lily, and Emma S."
+                      className="mx-auto w-[90vw] max-w-[300px]"
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="text-white">
+                      (From left to right) Emma C., Brianna, Lily, and Emma S.
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />

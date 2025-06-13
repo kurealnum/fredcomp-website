@@ -5,6 +5,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import CustomLink from "@/components/CustomLink";
 import { Metadata } from "next";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: "Join us! - FredComp MTB",
@@ -18,11 +23,18 @@ export default function Page() {
       </h1>
       <div className="flex flex-row flex-wrap items-baseline justify-center gap-8">
         <div className="flex max-w-[600px] flex-col">
-          <Image
-            alt="Team photo by the lake"
-            className="mx-auto w-[94vw] max-w-[500px]"
-            src={TeamPhoto}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Image
+                alt="Team photo by the lake"
+                className="mx-auto w-[94vw] max-w-[500px]"
+                src={TeamPhoto}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-white">Team photo by the lake</p>
+            </TooltipContent>
+          </Tooltip>
           <h2 className="my-4 text-center text-xl">
             You&apos;re always a good fit for us!
           </h2>
@@ -47,11 +59,18 @@ export default function Page() {
           </div>
         </div>
         <div className="flex flex-col">
-          <Image
-            className="mx-auto max-h-[333px] w-auto"
-            alt="Easton carrying Ronald"
-            src={EastonAndRonald}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Image
+                className="mx-auto max-h-[333px] w-auto"
+                alt="Easton carrying Ronald"
+                src={EastonAndRonald}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-white">Easton carrying Ronald</p>
+            </TooltipContent>
+          </Tooltip>
           <h2 className="my-4 text-center text-xl">Student Athlete Inquiry</h2>
           <div className="mx-auto w-[95%] max-w-[600px]">
             <div className="mb-2">
