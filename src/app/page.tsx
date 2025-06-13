@@ -16,14 +16,11 @@ import Carousel1 from "@img/homepage_carousel_1.jpg";
 import Carousel2 from "@img/homepage_carousel_2.jpg";
 import Carousel3 from "@img/homepage_carousel_3.jpg";
 import RowWrap from "@/components/RowWrap";
-import CustomLink from "@/components/CustomLink";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import SkeletonImage from "@/components/SkeletonImage";
-import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Home() {
   const structuredData = {
