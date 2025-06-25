@@ -112,12 +112,18 @@ export default function Footer() {
         </div>
       </div>
       <Separator className="bg-accent" />
-      <div className="flex flex-row flex-wrap justify-center gap-4 py-4">
+      <div className="flex flex-row flex-wrap justify-center gap-4 py-4 font-light">
         <div className="flex flex-row gap-1">
           Website designed & developed by
           <CustomLink href="https://oscargaske.me">Oscar Gaske</CustomLink>
         </div>
         <p>Majority of photos taken by Emily Lumpkins</p>
+        <div>
+          Graphics designed by{" "}
+          <CustomLink href="https://www.linkedin.com/in/jason-lumpkins-9577301ba/">
+            Jason Lumpkins
+          </CustomLink>
+        </div>
       </div>
     </div>
   );
