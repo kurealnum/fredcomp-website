@@ -113,42 +113,22 @@ export default function Page() {
             the fall.  Registration for both of these racing series is separate
             from Fredericksburg Composite Registration.
           </p>
+          <p>Registration closes 30 days after the start of each season.</p>
+          <div>
+            To register, you must complete the{" "}
+            <CustomLink href="https://docs.google.com/forms/d/e/1FAIpQLSdvjKtTGr0g9zjkXMQ9yRNQf6mfrj070iT5wR612iR8KeEPNw/viewform?usp=sf_link">
+              registration form.
+            </CustomLink>
+          </div>
           <p>
-            If you’re an adult interested in volunteering to be one of our
-            amazing coaches and ride volunteers, please contact us and consider{" "}
-            <Link href={"/volunteer"}>volunteering</Link>! Your involvement
-            means more #KidsOnBikes!
+            Once your registration is received, the Team Waiver and Code of
+            Conduct will be emailed for riders and families to review and
+            e-sign.
           </p>
-          <p>To register, you must submit the following:</p>
-          <ol className="list-inside list-decimal">
-            <li>Registration form</li>
-            <li>
-              Liability waiver (signed and dated - drop off at a ride/practice,
-              mail, or scan and email to fredcompmtb@gmail.com)
-            </li>
-            <li>
-              Code of Conduct (signed and dated - drop off at a ride/practice,
-              mail, or scan and email to fredcompmtb@gmail.com)
-            </li>
-          </ol>
-          <p>
-            There is a also a registration fee of $50 (per season, per student
-            athlete for Fall 2025) that is payable by cash, check, PayPal or
-            credit card.
-          </p>
+          <p>The registration fee is $50 per season, per student athlete.</p>
         </div>
       </LoadIn>
       <div className="my-4 flex flex-row flex-wrap justify-center gap-4">
-        <Button variant={"default"}>
-          <Link
-            href={
-              "https://docs.google.com/forms/d/e/1FAIpQLSdvjKtTGr0g9zjkXMQ9yRNQf6mfrj070iT5wR612iR8KeEPNw/viewform?usp=sf_link"
-            }
-            className="text-white"
-          >
-            Registration form
-          </Link>
-        </Button>
         <Button variant={"secondary"}>
           <Link
             href={
@@ -168,23 +148,13 @@ export default function Page() {
           </Link>
         </Button>
       </div>
-      <div className="flex flex-row flex-wrap items-center justify-center gap-8">
-        <div className="flex w-[100%] max-w-[600px] flex-col items-center">
-          <h3 className="mt-16 mb-2 text-xl font-normal">Liablity Waiver</h3>
-          <embed
-            className="mx-auto h-[94vw] max-h-[700px] w-[94vw] max-w-[600px]"
-            type="application/pdf"
-            src="/fredcomp_releaseofclaims.pdf"
-          />
-        </div>
-        <div className="flex w-[100%] max-w-[600px] flex-col items-center">
-          <h3 className="mt-16 mb-2 text-xl font-normal">Code of Conduct</h3>
-          <embed
-            className="mx-auto h-[94vw] max-h-[700px] w-[94vw] max-w-[600px]"
-            type="application/pdf"
-            src="/fredcomp_codeofconduct.pdf"
-          />
-        </div>
+      <div className="mt-4 flex w-[94vw] max-w-[600px] flex-col gap-6">
+        <p>
+          If you’re an adult interested in volunteering to be one of our amazing
+          coaches and ride volunteers, please contact us and consider{" "}
+          <Link href={"/volunteer"}>volunteering</Link>! Your involvement means
+          more #KidsOnBikes!
+        </p>
       </div>
     </div>
   );
