@@ -4,10 +4,12 @@ export default function CustomLink({
   children,
   href,
   className,
+  target,
 }: {
   children: React.ReactNode;
   href: string;
   className?: string;
+  target?: string;
 }) {
   return (
     <div
@@ -17,7 +19,7 @@ export default function CustomLink({
         className
       }
     >
-      <Link href={href} className="text-secondary">
+      <Link href={href} className="text-secondary" target={target}>
         {children}
       </Link>
       <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>

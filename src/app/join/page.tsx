@@ -116,7 +116,10 @@ export default function Page() {
           <p>Registration closes 30 days after the start of each season.</p>
           <div>
             To register, you must complete the{" "}
-            <CustomLink href="https://docs.google.com/forms/d/e/1FAIpQLSdvjKtTGr0g9zjkXMQ9yRNQf6mfrj070iT5wR612iR8KeEPNw/viewform?usp=sf_link">
+            <CustomLink
+              href="https://www.zeffy.com/en-US/ticketing/fredericksburg-composite-registration"
+              target="_blank"
+            >
               registration form.
             </CustomLink>
           </div>
@@ -126,36 +129,22 @@ export default function Page() {
             e-sign.
           </p>
           <p>The registration fee is $50 per season, per student athlete.</p>
+          <div>
+            Questions about registration or the team:{" "}
+            <CustomLink href="mailto: FredCompMTB@gmail.com">
+              FredCompMTB@gmail.com
+            </CustomLink>
+          </div>
+        </div>
+        <div className="mt-4 flex w-[94vw] max-w-[600px] flex-col gap-6">
+          <p>
+            If you’re an adult interested in volunteering to be one of our
+            amazing coaches and ride volunteers, please contact us and consider{" "}
+            <Link href={"/volunteer"}>volunteering</Link>! Your involvement
+            means more #KidsOnBikes!
+          </p>
         </div>
       </LoadIn>
-      <div className="my-4 flex flex-row flex-wrap justify-center gap-4">
-        <Button variant={"secondary"}>
-          <Link
-            href={
-              "https://www.google.com/url?q=https%3A%2F%2Fsquare.link%2Fu%2F4V2nVHru&sa=D&sntz=1&usg=AOvVaw3uJ72s6D6L1JJAY5BzTpNH"
-            }
-          >
-            Pay by credit card
-          </Link>
-        </Button>
-        <Button variant={"secondary"}>
-          <Link
-            href={
-              "http://www.google.com/url?q=http%3A%2F%2Fpaypal.me%2FFredCompMTB&sa=D&sntz=1&usg=AOvVaw3sOU_dMG5DCjaXSYAlP7nw"
-            }
-          >
-            Pay with PayPal
-          </Link>
-        </Button>
-      </div>
-      <div className="mt-4 flex w-[94vw] max-w-[600px] flex-col gap-6">
-        <p>
-          If you’re an adult interested in volunteering to be one of our amazing
-          coaches and ride volunteers, please contact us and consider{" "}
-          <Link href={"/volunteer"}>volunteering</Link>! Your involvement means
-          more #KidsOnBikes!
-        </p>
-      </div>
     </div>
   );
 }
