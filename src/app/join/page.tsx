@@ -2,7 +2,6 @@ import Link from "next/link";
 import TeamPhoto from "@img/lake_teamphoto.jpg";
 import EastonAndRonald from "@img/easton_and_ronald.jpg";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import CustomLink from "@/components/CustomLink";
 import { Metadata } from "next";
 import {
