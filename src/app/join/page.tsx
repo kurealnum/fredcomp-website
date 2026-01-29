@@ -105,14 +105,14 @@ export default function Page() {
         <div className="flex w-[94vw] max-w-[600px] flex-col gap-6">
           <p>
             The Fredericksburg Composite spring season runs from January to
-            June, and the fall season runs from July to November. Team group
-            rides happen outside of the racing calendar through organized
-            practices when weather and daylight allow. We encourage all student
-            athletes to try a race series, with VAHS in the spring or NICA in
-            the fall.  Registration for both of these racing series is separate
+            June, and the fall season runs from July to December. Team group
+            rides happen outside of the racing calendar when weather and
+            daylight allow. We encourage all student athletes to try a race
+            series, with VAHS in the spring or NICA in the fall. Racing is not
+            required. Registration for both of these racing series is separate
             from Fredericksburg Composite Registration.
           </p>
-          <p>Registration closes 30 days after the start of each season.</p>
+          <p>Registration closes 15 days after the start of each season.</p>
           <div>
             To register, you must complete the{" "}
             <CustomLink
