@@ -113,21 +113,17 @@ export default function Page() {
             from Fredericksburg Composite Registration.
           </p>
           <p>Registration closes 15 days after the start of each season.</p>
-          <div>
-            To register, you must complete the{" "}
+          <div className="mb-2">
+            Registration is currently closed for the Spring 2026 Season. To be
+            notified when our registration opens back up, please join our email
+            list by clicking{" "}
             <CustomLink
-              href="https://www.zeffy.com/en-US/ticketing/fredericksburg-composite-registration"
+              href="https://forms.gle/LGGg6LRB5kVaRUSB8"
               target="_blank"
             >
-              registration form.
-            </CustomLink>
+              here.
+            </CustomLink>{" "}
           </div>
-          <p>
-            Once your registration is received, the Team Waiver and Code of
-            Conduct will be emailed for riders and families to review and
-            e-sign.
-          </p>
-          <p>The registration fee is $50 per season, per student athlete.</p>
           <div>
             Questions about registration or the team:{" "}
             <CustomLink href="mailto: FredCompMTB@gmail.com">
