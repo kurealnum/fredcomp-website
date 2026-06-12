@@ -127,7 +127,7 @@ export default function Page() {
             Conduct will be emailed for riders and families to review and
             e-sign.
           </p>
-          <p>The registration fee is $50 per season, per student athlete.</p>
+          <p>The registration fee is $100 per season, per student athlete.</p>
           <div>
             Questions about registration or the team:{" "}
             <CustomLink href="mailto: FredCompMTB@gmail.com">
