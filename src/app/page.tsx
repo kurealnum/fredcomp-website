@@ -22,6 +22,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import LoadIn from "@/components/LoadIn";
+import Test from "./component";
 
 export default function Home() {
   const structuredData = {
@@ -64,6 +65,7 @@ export default function Home() {
           className="ml-[50%] h-screen w-[200vh] max-w-[200vh] -translate-x-[50%] scale-105 overflow-clip opacity-85 blur-md 2xl:scale-150"
         />
       </div>
+      <Test />
       <div id="about-us" className="flex flex-col gap-16 pt-8">
         <LoadIn>
           <RowWrap maxWidth={1200}>

@@ -112,24 +112,26 @@ export default function Page() {
             required. Registration for both of these racing series is separate
             from Fredericksburg Composite Registration.
           </p>
-          <p>Registration closes 15 days after the start of each season.</p>
+          {/* <p>Registration closes 15 days after the start of each season.</p> */}
+          {/* <div> */}
+          {/*   To register, you must complete the{" "} */}
+          {/*   <CustomLink */}
+          {/*     href="https://www.zeffy.com/en-US/ticketing/fredericksburg-composite-registration" */}
+          {/*     target="_blank" */}
+          {/*   > */}
+          {/*     registration form. */}
+          {/*   </CustomLink> */}
+          {/* </div> */}
+          {/* <p> */}
+          {/*   Once your registration is received, the Team Waiver and Code of */}
+          {/*   Conduct will be emailed for riders and families to review and */}
+          {/*   e-sign. */}
+          {/* </p> */}
+          {/* <p>The registration fee is $100 per season, per student athlete.</p> */}
           <div>
-            To register, you must complete the{" "}
-            <CustomLink
-              href="https://www.zeffy.com/en-US/ticketing/fredericksburg-composite-registration"
-              target="_blank"
-            >
-              registration form.
-            </CustomLink>
-          </div>
-          <p>
-            Once your registration is received, the Team Waiver and Code of
-            Conduct will be emailed for riders and families to review and
-            e-sign.
-          </p>
-          <p>The registration fee is $100 per season, per student athlete.</p>
-          <div>
-            Questions about registration or the team:{" "}
+            Registration is closed for this season, but feel free to reach out
+            to get put on our contact list for future seasons. Also be sure to
+            follow us on Instagram and Facebook for season news.
             <CustomLink href="mailto: FredCompMTB@gmail.com">
               FredCompMTB@gmail.com
             </CustomLink>
