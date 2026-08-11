@@ -31,7 +31,7 @@ export default function Page() {
               the cost of team insurance.
             </p>
             <p>
-              A $50 donation covers the team fees for one student athlete who
+              A $100 donation covers the team fees for one student athlete who
               otherwise would not have the resources to join the team!
             </p>
             <p>

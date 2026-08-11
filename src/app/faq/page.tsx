@@ -24,7 +24,7 @@ export default function Page() {
         name: "What does it cost to join the team and to race?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Team fees are $50 per season (January–June and July–November) as of June 2025. Additional racing-related fees include: team jersey ($55–$85 depending on style), and series racing fees (VAHS for spring, NICA for fall) paid directly to the league.",
+          text: "Team fees are $100 per season (January–June and July–November) as of June 2025. Additional racing-related fees include: team jersey ($55–$85 depending on style), and series racing fees (VAHS for spring, NICA for fall) paid directly to the league.",
         },
       },
       {

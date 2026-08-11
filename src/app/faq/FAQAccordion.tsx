@@ -47,7 +47,7 @@ export default function FAQAccordion() {
         <AccordionContent>
           <p className="mb-2">
             Team fees are collected per season (January-June and July-November).
-            As of June 2025, team fees are $50 for each student athlete.
+            As of June 2025, team fees are $100 for each student athlete.
           </p>
           <p className="mb-2">
             Additional fees for student athletes who will be racing:
